@@ -2,6 +2,7 @@ import 'package:chat/core/models/chat_notification.dart';
 import 'package:flutter/material.dart';
 
 class ChatNotificationService with ChangeNotifier {
+  // ignore: prefer_final_fields
   List<ChatNotification> _items = [];
 
   int get itemsCount {
