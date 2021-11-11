@@ -6,7 +6,7 @@ class NewMessage extends StatefulWidget {
   const NewMessage({Key? key}) : super(key: key);
 
   @override
-  _NewMessageState createState() => _NewMessageState();
+  State<NewMessage> createState() => _NewMessageState();
 }
 
 class _NewMessageState extends State<NewMessage> {
