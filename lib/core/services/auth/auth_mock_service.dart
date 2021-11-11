@@ -8,10 +8,10 @@ import 'package:chat/core/services/auth/auth_service.dart';
 class AuthMockService implements AuthService {
   // ignore: prefer_const_declarations
   static final _defaultUser = const ChatUser(
-    id: '456',
-    name: 'Ana',
-    email: 'ana@cod3r.com.br',
-    imageURL: 'assets/images/avatar.png',
+    id: '',
+    name: '',
+    email: '',
+    imageURL: '',
   );
 
   // ignore: prefer_final_fields
