@@ -24,27 +24,30 @@ class _NewMessageState extends State<NewMessage> {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: TextField(
-            controller: _messageController,
-            onChanged: (msg) => setState(() => _message = msg),
-            decoration: const InputDecoration(
-              labelText: 'Enviar mensagem...',
+    return Container(
+      margin: const EdgeInsets.only(left: 20),
+      child: Row(
+        children: [
+          Expanded(
+            child: TextField(
+              controller: _messageController,
+              onChanged: (msg) => setState(() => _message = msg),
+              decoration: const InputDecoration(
+                labelText: 'Enviar mensagem (curtinha) ;P...',
+              ),
+              onSubmitted: (_) {
+                if (_message.trim().isNotEmpty) {
+                  _sendMessage();
+                }
+              },
             ),
-            onSubmitted: (_) {
-              if (_message.trim().isNotEmpty) {
-                _sendMessage();
-              }
-            },
           ),
-        ),
-        IconButton(
-          icon: const Icon(Icons.send),
-          onPressed: _message.trim().isEmpty ? null : _sendMessage,
-        ),
-      ],
+          IconButton(
+            icon: const Icon(Icons.send),
+            onPressed: _message.trim().isEmpty ? null : _sendMessage,
+          ),
+        ],
+      ),
     );
   }
 }
