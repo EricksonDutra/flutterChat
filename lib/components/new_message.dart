@@ -30,7 +30,7 @@ class _NewMessageState extends State<NewMessage> {
           child: TextField(
             controller: _messageController,
             onChanged: (msg) => setState(() => _message = msg),
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               labelText: 'Enviar mensagem...',
             ),
             onSubmitted: (_) {
@@ -41,7 +41,7 @@ class _NewMessageState extends State<NewMessage> {
           ),
         ),
         IconButton(
-          icon: Icon(Icons.send),
+          icon: const Icon(Icons.send),
           onPressed: _message.trim().isEmpty ? null : _sendMessage,
         ),
       ],

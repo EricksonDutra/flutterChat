@@ -25,14 +25,17 @@ class AuthMockService implements AuthService {
     _updateUser(_defaultUser);
   });
 
+  // ignore: annotate_overrides
   ChatUser? get currentUser {
     return _currentUser;
   }
 
+  // ignore: annotate_overrides
   Stream<ChatUser?> get userChanges {
     return _userStream;
   }
 
+  // ignore: annotate_overrides
   Future<void> signup(
     String name,
     String email,
@@ -50,10 +53,12 @@ class AuthMockService implements AuthService {
     _updateUser(newUser);
   }
 
+  // ignore: annotate_overrides
   Future<void> login(String email, String password) async {
     _updateUser(_users[email]);
   }
 
+  // ignore: annotate_overrides
   Future<void> logout() async {
     _updateUser(null);
   }

@@ -29,6 +29,7 @@
 .packages
 .pub-cache/
 .pub/
+nome.txt
 /build/
 
 # Web related

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "380308208413",
+    "project_id": "chat-lar-2021",
+    "storage_bucket": "chat-lar-2021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380308208413:android:78a702fd93a1c0fcc8fff4",
+        "android_client_info": {
+          "package_name": "br.com.erickdevs.chathome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380308208413-o5rmoh9e581kdnmkujl7kbbiv8dd6vhg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4CU2mokNCy8eLqOElWUPqp7N5gbg7ZqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380308208413-o5rmoh9e581kdnmkujl7kbbiv8dd6vhg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -19,7 +19,7 @@ class MessageBubble extends StatelessWidget {
     final uri = Uri.parse(imageURL);
 
     if (uri.path.contains(_defaultImage)) {
-      provider = AssetImage(_defaultImage);
+      provider = const AssetImage(_defaultImage);
     } else if (uri.scheme.contains('http')) {
       provider = NetworkImage(uri.toString());
     } else {
@@ -44,16 +44,17 @@ class MessageBubble extends StatelessWidget {
               decoration: BoxDecoration(
                 color: belongsToCurrentUser
                     ? Colors.grey.shade300
+                    // ignore: deprecated_member_use
                     : Theme.of(context).accentColor,
                 borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(12),
-                  topRight: Radius.circular(12),
+                  topLeft: const Radius.circular(12),
+                  topRight: const Radius.circular(12),
                   bottomLeft: belongsToCurrentUser
-                      ? Radius.circular(12)
-                      : Radius.circular(0),
+                      ? const Radius.circular(12)
+                      : const Radius.circular(0),
                   bottomRight: belongsToCurrentUser
-                      ? Radius.circular(0)
-                      : Radius.circular(12),
+                      ? const Radius.circular(0)
+                      : const Radius.circular(12),
                 ),
               ),
               width: 180,
